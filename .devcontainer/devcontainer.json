@@ -4,5 +4,17 @@
     "extensions": [
         "ms-python.python"
     ],
-    "postCreateCommand": ".devcontainer/post-create.sh"
+    "postCreateCommand": ".devcontainer/post-create.sh",
+    
+  "customizations": {
+    "codespaces": {
+      "repositories": {
+        "bartbroere/windows-curses": {
+          "permissions": "write-all"
+        },
+            "bartbroere/PDCurses": {
+                "permissions": "write-all"
+            }
+    }
+  }
 }
